@@ -78,8 +78,8 @@ static struct ptrace_personality *personality(struct ptrace_child *child);
 #include "arch/i386.h"
 #elif defined(__arm__)
 #include "arch/arm.h"
-#else
-#error Unsupported architecture.
+#elif defined(__powerpc__)
+#include "arch/ppc.h"
 #endif
 
 #ifndef ARCH_HAVE_MULTIPLE_PERSONALITIES
